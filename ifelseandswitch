@@ -1,0 +1,76 @@
+package anusha;
+import java.util.Scanner;
+public class Loops
+{
+	public static void main(String[] args)
+	{
+		int Age ;
+		System.out.println("Enter your age : ");
+		Scanner sc =new Scanner(System.in);
+		 Age = sc.nextInt();
+		if(Age>18)
+		{
+			System.out.println("you are  eligible for voting");
+		}
+		else
+		{
+			System.out.println("you are not eligible for voting ");
+		}
+		
+		
+	}
+
+}
+
+output: 
+Enter your age: 19 
+you are eligible for voting
+
+Enter your age:10
+you are not eligible for voting
+
+
+
+
+
+Switch CAse
+
+
+package anusha;
+import java.util.Scanner;
+public class Switch {
+
+	public static void main(String[] args) 
+	{
+	  int choice;
+	  System.out.println("pick your choice: \t1.Burger \t2.Pizza \t3.Ice Cream \t4.Fries");
+	  Scanner sc=new Scanner(System.in);
+	  choice = sc.nextInt();
+	  switch(choice)
+	  {
+	  case 1: System.out.println("you pick Burger");
+	  break;
+	  case 2: System.out.println("you pick Pizza");
+	  break;
+	  case 3: System.out.println("you pick Ice Cream");
+	  break;
+	  case 4: System.out.println("you pick Fries");
+	  break;
+	  default : System.out.println("Invalid pick");
+	  }
+	 
+	}
+
+}
+
+
+OUTPUT:
+ pick your choice : 1
+ you pick Burger
+ 
+ 
+ pick your choice ; 2
+ you pick Pizza
+ 
+ pick your choice: 5
+ Invalid Input
